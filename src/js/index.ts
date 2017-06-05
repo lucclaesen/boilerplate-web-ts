@@ -1,8 +1,7 @@
 import {Point} from "./modulesAreSingleTons";
+import * as THREE from "three"
 
-import "../styles/app.css";
-
-
+new THREE.Vector3();
 
 console.log("Modules are Singletons, yeah");
 const p1 = Point();

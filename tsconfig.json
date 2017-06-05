@@ -1,10 +1,14 @@
 {     "compilerOptions": {
         "outDir": "./dist/",
+        "lib": [
+            "es2015", "dom"
+        ],
         "sourceMap": true,
         "noImplicitAny": false,
         "module": "commonjs",
         "target": "es5",
-        "jsx": "react"
+        "jsx": "react", 
+        "downlevelIteration": true
     },
     "include": [
         "./src/**/*",

@@ -133,7 +133,8 @@ const configFactory = {
 
             // make sure that code that overlaps between the chunks only gets placed in the vendor chunk
             this.config.plugins.push(new webpack.optimize.CommonsChunkPlugin({
-                name: "vendor"
+                name: "vendor",
+                minChunks: "Infinity"
             }));
 
             // change the fixed bundle names into names equal to those of their entry points

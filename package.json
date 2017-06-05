@@ -9,7 +9,7 @@
     "browser-test": "babel-node ./automation/devServer.js  --env.run tests",
     "clean-dist": "rimraf ./dist && mkdir dist",
     "prebuild": "npm-run-all clean-dist node-test",
-    "build": "babel-node ./automation/build.js --env.run app --env.target production --env.run app",
+    "build": "babel-node ./automation/build.js --env.run app --env.target production",
     "serve-dist": "babel-node ./automation/distserver.js"
   },
   "keywords": [],
@@ -46,7 +46,7 @@
     "yargs": "^6.6.0"
   },
   "dependencies": {
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "@types/three": "^0.84.9",
+    "three": "^0.85.2"
   }
 }
